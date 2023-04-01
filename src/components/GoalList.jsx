@@ -1,8 +1,8 @@
 
-import { useEffect } from "react"
-import {useDispatch, useSelector} from "react-redux"
 
-import {getGoals, deleteGoal} from "../features/goals/goalSlice"
+import {useDispatch} from "react-redux"
+
+import {deleteGoal} from "../features/goals/goalSlice"
 
 function GoalList({goal}) {
 	const dispatch = useDispatch()
