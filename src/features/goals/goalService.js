@@ -1,6 +1,6 @@
 import axios from 'axios'
 import envConfig from '../../utils/envConfig'
-const API_URL = `${envConfig}/goals/`
+const API_URL = `${envConfig.backendUrl}/goals/`
 
 const createGoal = async (goalData, token) => {
     const config = {
