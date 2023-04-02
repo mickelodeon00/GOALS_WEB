@@ -1,5 +1,6 @@
 import axios from 'axios'
-const API_URL = '/api/users/'
+import envConfig from '../../utils/envConfig'
+const API_URL = `${envConfig}/users/`
 
 const register = async (userData) => {
     const response = await axios.post(API_URL, userData)
