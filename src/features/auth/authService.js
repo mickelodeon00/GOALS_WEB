@@ -1,6 +1,6 @@
 import axios from 'axios'
-import envConfig from '../../utils/envConfig'
-const API_URL = `${envConfig.backendUrl}/users/`
+
+const API_URL = `${process.env.REACT_APP_BACKEND_API_URL}/users/`
 
 const register = async (userData) => {
     const response = await axios.post(API_URL, userData)
